@@ -1,9 +1,11 @@
-function Exception(){
-    return (
-        <div>
-            <h1>404 Page not found</h1>
-        </div>
-    )
-}
+import React from "react";
+import Erreur from "../../components/Erreur/erreur";
 
-export default Exception
+const Exception = () =>
+(
+    <div>
+        <Erreur />
+    </div>
+);
+
+export default Exception;

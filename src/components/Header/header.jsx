@@ -9,6 +9,6 @@ const Header = () =>
             <a href="/a-propos">A Propos</a>
         </nav>
     </header>
-)
+);
 
 export default Header;

@@ -9,6 +9,7 @@ import Apropos from "./components/Apropos/apropos";
 import Footer from "./components/Footer/footer";
 
 import "./sass/style.css";
+import Propriete from "./pages/Propriete/propriete";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,16 @@ const router = createBrowserRouter([
       <div>
         <Header />
         <Apropos />
+        <Footer />
+      </div>
+    )
+  },
+  {
+    path: "/propriete",
+    element: (
+      <div>
+        <Header />
+        <Propriete />
         <Footer />
       </div>
     )

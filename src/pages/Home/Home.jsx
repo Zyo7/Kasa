@@ -1,9 +1,12 @@
-function Home(){
-    return (
-        <div>
-            <h1>Page d'accueil</h1>
-        </div>
-    )
-}
+import React from "react";
+import Banner from "../../components/Banner/banner";
+import Card from "../../components/Card/card";
 
-export default Home
+const Home = () =>(
+    <div>
+        <Banner />
+        <Card />
+    </div>
+);
+
+export default Home;
