@@ -1,12 +1,20 @@
 import React from "react";
 
-const Card = () => (
-    <div>
+
+
+function Card (props){
+        const url = props.preview.id;
+        const src = props.preview.cover;
+        const title= props.preview.title;
+
+        return <div>
         <div>
-            <img src="#" alt="Carte temporaire" />
-            <p>Titre de la location</p>
+            <a href={url}>
+                <img src={src} alt="Carte temporaire" />
+                <p>{title}</p>
+            </a>
         </div>
     </div>
-);
+}
 
 export default Card;

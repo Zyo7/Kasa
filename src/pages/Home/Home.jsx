@@ -1,12 +1,16 @@
 import React from "react";
 import Banner from "../../components/Banner/banner";
-import Card from "../../components/Card/card";
+import Card from "../../components/Card/Card";
 
-const Home = () =>(
-    <div>
+
+
+function Home(data) {
+        return <div>
         <Banner />
-        <Card />
+        {data.logements.map(logement =>(
+            <Card preview={logement}/>
+        ))}
     </div>
-);
+}
 
 export default Home;

@@ -1,12 +1,14 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
+
 
 const Header = () =>
 (
     <header>
         <div><img src="#" alt="logo temporaire"/></div>
         <nav>
-            <a href="/">Accueil</a>
-            <a href="/a-propos">A Propos</a>
+            <NavLink to="/">Accueil</NavLink>
+            <NavLink to="/a-propos">A Propos</NavLink>
         </nav>
     </header>
 );

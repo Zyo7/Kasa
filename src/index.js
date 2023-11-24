@@ -7,9 +7,10 @@ import Exception from "./pages/exception/exception"
 import Header from "./components/Header/header";
 import Apropos from "./components/Apropos/apropos";
 import Footer from "./components/Footer/footer";
+import Propriete from "./pages/Propriete/propriete";
+import data from "./logements.json"
 
 import "./sass/style.css";
-import Propriete from "./pages/Propriete/propriete";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
     element: (
       <div>
         <Header />
-        <Home />
+        <Home logements={data}/>
         <Footer />
       </div>
     )
