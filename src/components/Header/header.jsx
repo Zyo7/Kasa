@@ -8,7 +8,7 @@ const Header = () =>
         <div><img src="#" alt="logo temporaire"/></div>
         <nav>
             <NavLink to="/">Accueil</NavLink>
-            <NavLink to="/a-propos">A Propos</NavLink>
+            <NavLink to="/about">A Propos</NavLink>
         </nav>
     </header>
 );

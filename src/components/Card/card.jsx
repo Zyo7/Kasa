@@ -3,7 +3,7 @@ import React from "react";
 
 
 function Card (props){
-        const url = "propriete/"+props.preview.id;
+        const url = "property/"+props.preview.id;
         const src = props.preview.cover;
         const title= props.preview.title;
 
