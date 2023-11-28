@@ -1,65 +1,72 @@
 import React from "react";
 //import ReactDOM from "react-dom";
 import {createRoot} from "react-dom/client";
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Exception from "./pages/exception/exception"
 import Header from "./components/Header/header";
-import Apropos from "./components/Apropos/apropos";
+import Apropos from "./pages/Apropos/apropos";
 import Footer from "./components/Footer/footer";
 import Propriete from "./pages/Propriete/propriete";
 import data from "./logements.json"
 
 import "./sass/style.css";
 
+function Root () {
+  return <>
+    <Header />
+    <Outlet />
+    <Footer />
+  </>
+}
+
+function Error (){
+  return <>
+    <Header/>
+    <Exception/>
+    <Footer/>
+  </>
+}
+
+
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: (
-      <div>
-        <Header />
-        <Home logements={data}/>
-        <Footer />
-      </div>
-    )
-  },
-  {
-    path: "/a-propos",
-    element: (
-      <div>
-        <Header />
-        <Apropos />
-        <Footer />
-      </div>
-    )
-  },
-  {
-    path: "/propriete",
-    element: (
-      <div>
-        <Header />
-        <Propriete />
-        <Footer />
-      </div>
-    )
-  },
-  {
-    path: "/404",
-    element: (
-      <div>
-        <Header />
-        <Exception />
-        <Footer />
-      </div>
-    )
+    path: '/',
+    element: <Root />,
+    errorElement: <Error />,
+    children: [
+      {
+        path: '',
+        element: <Home logements={data}/>
+        
+      },
+      {
+        path: 'a-propos',
+        element: <Apropos />   
+      },
+      {
+        path: "propriete",
+        element: <Outlet />,
+        children: [
+          {
+            path: '',
+            element: <Propriete datas={null}/>
+          },
+          {
+            path:':id',
+            element: <Propriete datas={data}/>
+          }
+        ]        
+      }
+    ]
   }
-])
+]);
+
 /*
 function App(){
   return <RouterProvider router={router} />
 }
-*/
-/*
+
 class App extends React.Component {
     render() {
         return 

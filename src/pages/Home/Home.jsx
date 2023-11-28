@@ -6,7 +6,7 @@ import Card from "../../components/Card/Card";
 
 function Home(data) {
         return <div>
-        <Banner />
+        <Banner home="true" text="true"/>
         {data.logements.map(logement =>(
             <Card preview={logement}/>
         ))}

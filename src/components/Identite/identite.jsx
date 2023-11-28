@@ -1,10 +1,10 @@
 import React from "react";
 
-const Identite = () => (
+const Identite = (props) => (
     <div>
-        <p>Nom et prénom temporaire</p>
-        <img src="#" alt="identité temporaire" />
-        <i>Rating temporaire issue de toolkit ou image de rating?</i>
+        <p>{props.identite.host["name"]}</p>
+        <img src={props.identite.host["picture"]} alt="identité temporaire" />
+        <i>{props.identite.rating}</i>
     </div>
 );
 

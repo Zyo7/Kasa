@@ -1,10 +1,11 @@
 import React from "react";
 
-const Localisation = () => (
+const Localisation = (props) => (
     <div>
-        <h1>Titre temporaire</h1>
-        <h2>Localisation temporaire</h2>
-        <p>Tag temporaire</p>
+        <h1>{props.localisation.title}</h1>
+        <h2>{props.localisation.location}</h2>
+        <p>{props.localisation.tags[0]}</p>
+        <p>{props.localisation.tags[1]}</p>
     </div>
 );
 
