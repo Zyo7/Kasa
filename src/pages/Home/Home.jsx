@@ -5,12 +5,14 @@ import Card from "../../components/Card/Card";
 
 
 function Home(data) {
-        return <div>
+    return <main className="homePage">
         <Banner home="true" text="true"/>
-        {data.logements.map(logement =>(
-            <Card preview={logement}/>
-        ))}
-    </div>
+        <section className="homePage__section">
+            {data.logements.map(logement =>(
+                <Card preview={logement}/>
+                ))}
+        </section>
+    </main>
 }
 
 export default Home;

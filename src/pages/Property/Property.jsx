@@ -12,13 +12,13 @@ function Property(props) {
     const index = props.datas.findIndex(e => e.id === id);
     if(index >= 0) {
         const logement = props.datas[index];                
-        return <div>
-        <Slideshow slide={logement}/>
-        <Location location={logement}/>
-        <Identity identity={logement}/>
-        <Collapse titre="Description" contenu={logement.description}/>
-        <Collapse titre="Équipements" contenu={logement.equipments}/>
-    </div>;
+        return <main>
+            <Slideshow slide={logement}/>
+            <Location location={logement}/>
+            <Identity identity={logement}/>
+            <Collapse titre="Description" contenu={logement.description}/>
+            <Collapse titre="Équipements" contenu={logement.equipments}/>
+        </main>;
     }
     else {
         return <ErrorPage/>;

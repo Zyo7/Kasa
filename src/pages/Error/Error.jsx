@@ -3,9 +3,9 @@ import ErrorCompo from "../../components/Error/Error";
 
 const ErrorPage = () =>
 (
-    <div>
+    <main>
         <ErrorCompo />
-    </div>
+    </main>
 );
 
 export default ErrorPage;

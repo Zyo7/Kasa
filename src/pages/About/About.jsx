@@ -6,10 +6,10 @@ import abouts from "../../about.json"
 function About(){
     const content = abouts.map((about) => <Collapse titre={about.title} contenu={about.content} />);
 
-    return <div>
+    return <main>
         <Banner />
         {content}
-    </div>
+    </main>
 }
 
 export default About;
