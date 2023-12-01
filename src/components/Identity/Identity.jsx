@@ -5,9 +5,11 @@ import {ReactComponent as GreyStar} from "../../assets/greyStar.svg"
 function Identity(props){
 
     return <article className="infoLocation__identity">
-        <p className="infoLocation__identity--name">{props.identity.host["name"]}</p>
-        <img className="infoLocation__identity--picture" src={props.identity.host["picture"]} alt="identité temporaire" />
-        <div>
+        <div className="infoLocation__identity--info">
+            <p className="infoLocation__identity--name">{props.identity.host["name"]}</p>
+            <img className="infoLocation__identity--picture" src={props.identity.host["picture"]} alt="identité temporaire" />
+        </div>
+        <div className="infoLocation__identity--rating">
             {
                 function (){
                     let rating = [];

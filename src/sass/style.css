@@ -8,7 +8,8 @@ body {
   display: flex;
   justify-content: space-between;
   color: #FF6060;
-  margin: 45px 100px;
+  margin: 50px auto;
+  max-width: 1240px;
 }
 .header__nav--link {
   font-weight: 500;
@@ -24,8 +25,8 @@ body {
 }
 
 main {
-  margin-left: 45px;
-  margin-right: 45px;
+  margin: 0 auto;
+  max-width: 1240px;
 }
 
 .banner {
@@ -94,22 +95,54 @@ main {
   left: 4%;
 }
 
+.infoGalery {
+  position: relative;
+  height: 415px;
+  width: 1240px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.infoGalery__image {
+  position: absolute;
+  width: 1240px;
+  z-index: 1;
+}
+.infoGalery__nav {
+  position: absolute;
+  color: #FFFFFF;
+  z-index: 5;
+  top: 36%;
+}
+.infoGalery__nav.back {
+  left: 1%;
+}
+.infoGalery__nav.forward {
+  right: 1%;
+}
+.infoGalery__nav.number {
+  top: 85%;
+  left: 50%;
+}
+
 .infoLocation {
   display: flex;
   justify-content: space-between;
   color: #FF6060;
   font-weight: 500;
+  margin: 30px 0 25px;
 }
 .infoLocation__location {
-  margin: 0;
+  margin: 0px;
   padding: 0;
 }
 .infoLocation__location--title {
   font-size: 36px;
   line-height: 51.34px;
   font-weight: 500;
+  margin: 0;
 }
 .infoLocation__location--town {
+  margin: 0 0 20px;
   font-size: 18px;
   line-height: 25.67px;
   font-weight: 500;
@@ -124,21 +157,37 @@ main {
   min-width: 115px;
   height: 25px;
   text-align: center;
-  margin-right: 10px;
+  margin: 0 10px 0 0;
   font-weight: 500;
   padding: 1px 22px;
 }
+.infoLocation__identity {
+  display: flex;
+  flex-direction: column;
+}
+.infoLocation__identity--info {
+  display: flex;
+}
 .infoLocation__identity--name {
-  padding-bottom: 10px;
   display: inline-block;
-  width: 90px;
+  width: 110px;
   text-align: right;
+  margin: 0;
+  padding-top: 10px;
 }
 .infoLocation__identity--picture {
   display: inline-block;
   width: 64px;
   height: 64px;
   border-radius: 32px;
+  margin-left: 20px;
+}
+.infoLocation__identity--rating {
+  text-align: right;
+  margin-top: 20px;
+}
+.infoLocation__identity--rating svg {
+  margin-left: 15px;
 }
 
 .infoComplementaire {
