@@ -197,11 +197,22 @@ main {
 }
 .infoComplementaire .collapseDiv {
   width: 45%;
+}
+
+.aboutPage .banner {
+  margin-bottom: 40px;
+}
+.aboutPage .collapseDiv {
+  margin: 30px auto 0;
+  width: 80%;
+}
+
+.collapseDiv {
   height: auto;
   background-color: #F6F6F6;
   border-radius: 10px 10px 5px 5px;
 }
-.infoComplementaire .collapseDiv__title {
+.collapseDiv__title {
   border-radius: 5px;
   padding: 10px 20px 10px 10px;
   background-color: #FF6060;
@@ -211,11 +222,11 @@ main {
   font-size: 18px;
   line-height: 25.67px;
 }
-.infoComplementaire .collapseDiv__content {
+.collapseDiv__content {
   color: #FF6060;
   padding: 30px 20px;
 }
-.infoComplementaire .collapseDiv__content p {
+.collapseDiv__content p {
   margin: 0;
   font-weight: 400;
   font-size: 18px;

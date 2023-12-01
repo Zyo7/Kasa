@@ -6,7 +6,7 @@ import abouts from "../../about.json"
 function About(){
     const content = abouts.map((about) => <Collapse titre={about.title} contenu={about.content} />);
 
-    return <main>
+    return <main className="aboutPage">
         <Banner />
         {content}
     </main>
