@@ -9,9 +9,9 @@ function Collapse(props){
         contenu = <p>{props.contenu}</p>;
     }
 
-    return <div>
-        <h1>{props.titre}</h1>
-        <div>{contenu}</div>
+    return <div className="collapseDiv">
+        <h1 className="collapseDiv__title">{props.titre}</h1>
+        <div className="collapseDiv__content">{contenu}</div>
     </div>
 }
 

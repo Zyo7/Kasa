@@ -1,12 +1,13 @@
 import React from "react";
 
 const Location = (props) => (
-    <div>
-        <h1>{props.location.title}</h1>
-        <h2>{props.location.location}</h2>
-        <p>{props.location.tags[0]}</p>
-        <p>{props.location.tags[1]}</p>
-    </div>
+    <article className="infoLocation__location">
+        <h1 className="infoLocation__location--title">{props.location.title}</h1>
+        <h2 className="infoLocation__location--town">{props.location.location}</h2>
+        {props.location.tags.map(tag =>(
+            <p className="infoLocation__location--tags">{tag}</p>
+        ))}
+    </article>
 );
 
 export default Location;

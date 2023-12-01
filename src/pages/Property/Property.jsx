@@ -12,12 +12,16 @@ function Property(props) {
     const index = props.datas.findIndex(e => e.id === id);
     if(index >= 0) {
         const logement = props.datas[index];                
-        return <main>
+        return <main className="propertyPage">
             <Slideshow slide={logement}/>
-            <Location location={logement}/>
-            <Identity identity={logement}/>
-            <Collapse titre="Description" contenu={logement.description}/>
-            <Collapse titre="Équipements" contenu={logement.equipments}/>
+            <section className="infoLocation">
+                <Location location={logement}/>
+                <Identity identity={logement}/>
+            </section>
+            <section className="infoComplementaire">
+                <Collapse titre="Description" contenu={logement.description}/>
+                <Collapse titre="Équipements" contenu={logement.equipments}/>
+            </section>
         </main>;
     }
     else {

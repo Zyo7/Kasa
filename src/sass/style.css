@@ -89,17 +89,97 @@ main {
 .homePage__card--title {
   position: absolute;
   width: 70%;
-  color: white;
+  color: #FFFFFF;
   bottom: 2%;
   left: 4%;
 }
 
+.infoLocation {
+  display: flex;
+  justify-content: space-between;
+  color: #FF6060;
+  font-weight: 500;
+}
+.infoLocation__location {
+  margin: 0;
+  padding: 0;
+}
+.infoLocation__location--title {
+  font-size: 36px;
+  line-height: 51.34px;
+  font-weight: 500;
+}
+.infoLocation__location--town {
+  font-size: 18px;
+  line-height: 25.67px;
+  font-weight: 500;
+}
+.infoLocation__location--tags {
+  border-radius: 10px;
+  color: #FFFFFF;
+  background-color: #FF6060;
+  font-size: 14px;
+  line-height: 25px;
+  display: inline-block;
+  min-width: 115px;
+  height: 25px;
+  text-align: center;
+  margin-right: 10px;
+  font-weight: 500;
+  padding: 1px 22px;
+}
+.infoLocation__identity--name {
+  padding-bottom: 10px;
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+.infoLocation__identity--picture {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+}
+
+.infoComplementaire {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.infoComplementaire .collapseDiv {
+  width: 45%;
+  height: auto;
+  background-color: #F6F6F6;
+  border-radius: 10px 10px 5px 5px;
+}
+.infoComplementaire .collapseDiv__title {
+  border-radius: 5px;
+  padding: 10px 20px 10px 10px;
+  background-color: #FF6060;
+  margin: 0;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25.67px;
+}
+.infoComplementaire .collapseDiv__content {
+  color: #FF6060;
+  padding: 30px 20px;
+}
+.infoComplementaire .collapseDiv__content p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25.67px;
+}
+
 .footer {
-  color: white;
-  background-color: black;
+  color: #FFFFFF;
+  background-color: #000000;
   height: 209px;
   width: 100%;
   position: relative;
+  margin-top: 50px;
 }
 .footer__logo {
   width: 122px;
