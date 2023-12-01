@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat';
+    font-weight: 500;
 }
 
 .header {
@@ -14,7 +15,6 @@ body {
     max-width: 1240px;
     &__nav {
         &--link {
-            font-weight: 500;
             font-size: 24px;
             text-decoration: none;
             margin-left: 50px;
@@ -49,7 +49,6 @@ main {
         &--text {
             margin: 0;
             color: #FFFFFF;
-            font-weight: 500;
             font-size: 48px;
             line-height: 68.45px;
             text-align: center;
@@ -134,7 +133,6 @@ main {
     display: flex;
     justify-content: space-between;
     color: $main-red-color;
-    font-weight: 500;
     margin: 30px 0 25px;
     &__location{
         margin: 0px;
@@ -142,14 +140,12 @@ main {
         &--title{
             font-size: 36px;
             line-height: 51.34px;
-            font-weight: 500;
             margin: 0;
         }
         &--town{
             margin: 0 0 20px;
             font-size: 18px;
             line-height: 25.67px;
-            font-weight: 500;
         }
         &--tags{
             border-radius: 10px;
@@ -162,7 +158,6 @@ main {
             height: 25px;
             text-align: center;
             margin: 0 10px 0 0;
-            font-weight: 500;
             padding: 1px 22px;
         }
     }
@@ -226,7 +221,6 @@ main {
         background-color: $main-red-color;
         margin: 0;
         color: $white;
-        font-weight: 500;
         font-size: 18px;
         line-height: 25.67px;
     }
@@ -238,6 +232,30 @@ main {
             font-weight: 400;
             font-size: 18px;
             line-height: 25.67px;
+        }
+    }
+}
+
+.errorPage{
+    color: $main-red-color;
+    text-align: center;
+    margin-bottom: 140px;
+    &__title{
+        font-weight: 700;
+        font-size: 288px;
+        line-height: 410.69px;
+        margin: 50px 0 70px;
+    }
+    &__text{
+        font-size: 36px;
+        line-height: 51.34px;
+        margin-bottom: 140px;
+    }
+    &__link{
+        font-size: 18px;
+        line-height: 25.67px;
+        &:visited, &:active, &:hover, &:link{
+            color: $main-red-color;
         }
     }
 }

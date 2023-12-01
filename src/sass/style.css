@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat";
+  font-weight: 500;
 }
 
 .header {
@@ -12,7 +13,6 @@ body {
   max-width: 1240px;
 }
 .header__nav--link {
-  font-weight: 500;
   font-size: 24px;
   text-decoration: none;
   margin-left: 50px;
@@ -47,7 +47,6 @@ main {
 .banner__opacity--text {
   margin: 0;
   color: #FFFFFF;
-  font-weight: 500;
   font-size: 48px;
   line-height: 68.45px;
   text-align: center;
@@ -128,7 +127,6 @@ main {
   display: flex;
   justify-content: space-between;
   color: #FF6060;
-  font-weight: 500;
   margin: 30px 0 25px;
 }
 .infoLocation__location {
@@ -138,14 +136,12 @@ main {
 .infoLocation__location--title {
   font-size: 36px;
   line-height: 51.34px;
-  font-weight: 500;
   margin: 0;
 }
 .infoLocation__location--town {
   margin: 0 0 20px;
   font-size: 18px;
   line-height: 25.67px;
-  font-weight: 500;
 }
 .infoLocation__location--tags {
   border-radius: 10px;
@@ -158,7 +154,6 @@ main {
   height: 25px;
   text-align: center;
   margin: 0 10px 0 0;
-  font-weight: 500;
   padding: 1px 22px;
 }
 .infoLocation__identity {
@@ -218,7 +213,6 @@ main {
   background-color: #FF6060;
   margin: 0;
   color: #FFFFFF;
-  font-weight: 500;
   font-size: 18px;
   line-height: 25.67px;
 }
@@ -231,6 +225,30 @@ main {
   font-weight: 400;
   font-size: 18px;
   line-height: 25.67px;
+}
+
+.errorPage {
+  color: #FF6060;
+  text-align: center;
+  margin-bottom: 140px;
+}
+.errorPage__title {
+  font-weight: 700;
+  font-size: 288px;
+  line-height: 410.69px;
+  margin: 50px 0 70px;
+}
+.errorPage__text {
+  font-size: 36px;
+  line-height: 51.34px;
+  margin-bottom: 140px;
+}
+.errorPage__link {
+  font-size: 18px;
+  line-height: 25.67px;
+}
+.errorPage__link:visited, .errorPage__link:active, .errorPage__link:hover, .errorPage__link:link {
+  color: #FF6060;
 }
 
 .footer {
