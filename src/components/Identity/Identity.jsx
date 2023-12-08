@@ -14,7 +14,7 @@ function Identity(props){
                 function (){
                     let rating = [];
                     for(let i = 0; i < 5; i++){
-                        rating.push(i < props.identity.rating ? <RedStar/> : <GreyStar/>)
+                        rating.push(i < props.identity.rating ? <RedStar key={i}/> : <GreyStar key={i}/>)
                     }
                     return rating;
                 }()

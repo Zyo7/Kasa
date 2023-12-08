@@ -7,8 +7,8 @@ function Banner(props){
     
     return <div className={props.home ? home : about}>
         <div className="banner__opacity">
-            {props.text && <p className="banner__opacity--text">Chez vous, partout et ailleurs</p>}
         </div>
+        {props.text && <p className="banner__text">Chez vous, partout et ailleurs</p>}
     </div>
 }
 

@@ -12,6 +12,16 @@ function Property(props) {
     const index = props.datas.findIndex(e => e.id === id);
     if(index >= 0) {
         const logement = props.datas[index];                
+        const info = [
+            {
+                titre: "Description",
+                contenu: logement.description
+            },
+            {
+                titre: "Équipements",
+                contenu: logement.equipments
+            }
+        ]
         return <main className="propertyPage">
             <Slideshow slide={logement}/>
             <section className="infoLocation">
@@ -19,8 +29,7 @@ function Property(props) {
                 <Identity identity={logement}/>
             </section>
             <section className="infoComplementaire">
-                <Collapse titre="Description" contenu={logement.description}/>
-                <Collapse titre="Équipements" contenu={logement.equipments}/>
+                {info.map((e,i) => <Collapse titre={e.titre} contenu={e.contenu} key={i} />)}
             </section>
         </main>;
     }
