@@ -1,17 +1,34 @@
-@import 'variables';
+@import 'partials/variables';
 
-body {
+html, body, #root{
+    height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
+}
+
+body {
     font-family: 'Montserrat';
     font-weight: 500;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainBody{
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     color: $main-red-color;
-    margin: 50px auto;
+    margin: 50px 0;
+    width: 100%;
     max-width: 1240px;
     &__nav {
         &--link {
@@ -29,7 +46,8 @@ body {
 }
 
 main {
-    margin: 0 auto;
+    margin: 0;
+    width: 100%;
     max-width: 1240px;
 }
 
@@ -57,9 +75,11 @@ main {
         line-height: 68.45px;
         text-align: center;
         position: absolute;
-        top: 30%;
-        left: 20%;
-
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 710px;
     }
     &.home {
         background-image: url("../assets/banner_home.svg");
@@ -74,19 +94,19 @@ main {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        row-gap: 40px;
-        column-gap: 40px;
+        justify-content: center;
         background-color: $grey;
         border-radius: 25px;
         margin-top: 40px;
         margin-bottom: 50px;
-        padding: 60px;
+        padding: 40px 0;
     }
     &__card {
         padding: 0;
         border-radius: 10px;
         width: 340px;
         height: 340px;
+        margin: 20px 10px;
         position: relative;
         background-position: center;
         &--link{
@@ -94,6 +114,7 @@ main {
             width: 340px;
             height: 340px;
             background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+            border-radius: 10px;
         }
         &--title{
             position: absolute;
@@ -101,6 +122,7 @@ main {
             color: $white;
             bottom: 2%;
             left: 4%;
+            font-size: 18px;
         }
     }
 }
@@ -108,12 +130,14 @@ main {
 .infoGalery {
     position: relative;
     height: 415px;
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     border-radius: 25px;
     background-position: center;
     &__shadow{
         position: absolute;
-        width: 1240px;
+        width: 100%;
+        max-width: 1240px;
         height: 415px;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     }
@@ -163,7 +187,7 @@ main {
             min-width: 115px;
             height: 25px;
             text-align: center;
-            margin: 0 10px 0 0;
+            margin: 0 10px 10px 0;
             padding: 1px 22px;
         }
     }
@@ -299,13 +323,15 @@ main {
     height: 209px;
     width: 100%;
     position: relative;
-    margin-top: 50px;
+    margin-top: auto;
     &__logo {
+        display: block;
         width: 122px;
-        margin: 50px 45% 0px;
+        margin: 0px auto;
+        padding-top: 5%;
     }
     &__text{
-        margin: 10px 32% 0px;
+        margin-top: 10px;
         font-style: normal;
         font-weight: 500;
         font-size: 24px;
@@ -313,3 +339,7 @@ main {
         text-align: center;
     }
 }
+
+@import 'partials/rwd-desktop';
+@import 'partials/rwd-tablette';
+@import 'partials/rwd-mobile';

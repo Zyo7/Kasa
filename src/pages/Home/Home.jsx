@@ -8,8 +8,8 @@ function Home(data) {
     return <main className="homePage">
         <Banner home="true" text="true"/>
         <section className="homePage__section">
-            {data.logements.map(logement =>(
-                <Card preview={logement}/>
+            {data.logements.map((logement, i) =>(
+                <Card preview={logement} key={i}/>
                 ))}
         </section>
     </main>

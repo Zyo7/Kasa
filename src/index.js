@@ -14,16 +14,20 @@ import "./sass/style.css";
 
 function Root () {
   return <>
+  <div className="mainBody">
     <Header />
     <Outlet />
+  </div>
     <Footer />
   </>
 }
 
 function Error (){
   return <>
+  <div className="mainBody">
     <Header/>
     <ErrorPage/>
+  </div>
     <Footer/>
   </>
 }

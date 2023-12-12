@@ -1,0 +1,20 @@
+@import '_variables';
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .homePage__section{
+        background-color: $white;
+    }
+
+    .errorPage{
+        &__title{
+            font-size: 180px;
+            margin: 20px 0;
+            line-height: 250px;
+        }
+        &__text{
+            font-size: 26px;
+            margin-bottom: 100px;
+            line-height: 32px;
+        }
+    }
+}

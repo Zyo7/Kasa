@@ -1,0 +1,131 @@
+@media (max-width: 768px) {
+    .header {
+        margin: 10px 0;
+        &__logo svg{
+            width: 145px;
+    
+        }
+        &__nav {
+            &--link {
+                font-size: 12px;
+                line-height: 17.11px;
+            }
+        }
+    }
+    
+    .banner{
+        height: 111px;
+        &__text{
+            text-align: left;
+            top: 25%;
+            width: 45%;
+            font-size: 24px;
+            line-height: 24px;
+            transform: translateX(-100%);
+        }
+    }
+
+    .homePage {
+        &__section{
+            background-color: $white;
+        }
+        &__card {
+            width: 335px;
+            &--link{
+                width: 335px;
+            }
+            &--title{
+                bottom: 1%;
+            }
+        }
+    }
+
+    .infoGalery{
+        height: 255px;
+        &__shadow{
+            background: none;
+        }
+        &__nav.forward, &__nav.back {
+            width: 24px;
+        }
+        &__nav.number {
+            display: none;
+        }
+    }
+
+    .infoLocation{
+        flex-direction: column;
+        &__location{
+            &--title{
+                font-size: 18px;
+            }
+            &--town{
+                font-size: 14px;
+            }
+            &--tags{
+                font-size: 10px;
+                min-width: 84px;
+                height: 16px;
+                line-height: 14px;
+                padding: 4px 22px 0px;
+            }
+        }
+        &__identity{
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            &--rating svg{
+                width: 18px;
+            }
+            &--name{
+                font-size: 12px;
+            }
+            &--picture{
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+
+    .infoComplementaire {
+        flex-direction: column;
+        row-gap: 40px;
+        & .collapseDiv{
+            width: 100%;
+        }
+    }
+
+    .errorPage{
+        &__title{
+            font-size: 96px;
+            margin: 20px 0;
+            line-height: 140px;
+        }
+        &__text{
+            font-size: 18px;
+            margin-bottom: 100px;
+            line-height: 25px;
+        }
+        &__link{
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    .aboutPage .collapseDiv{
+        width: 100%;
+    }
+
+    .footer {
+        padding: 60px 0;
+        height: auto;
+        &__logo{
+            padding-top: 0;
+        }
+        &__text{
+            font-size: 12px;
+            line-height: 17.11px;
+            margin: 10px auto 0;
+            width: 133px;
+        }
+    }
+}
