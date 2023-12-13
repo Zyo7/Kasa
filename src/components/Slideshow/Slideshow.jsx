@@ -32,5 +32,5 @@ class Slideshow extends React.Component {
         </section>
     }
 }
-//<img src={this.props.slide.pictures[this.state.slide]} alt="slideshow temporaire" className="infoGalery__image" />
+
 export default Slideshow;

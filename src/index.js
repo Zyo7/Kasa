@@ -1,5 +1,4 @@
 import React from "react";
-//import ReactDOM from "react-dom";
 import {createRoot} from "react-dom/client";
 import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 import Home from "./pages/Home/Home";

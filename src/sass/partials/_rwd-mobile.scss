@@ -11,8 +11,8 @@
                 line-height: 17.11px;
             }
         }
-    }
-    
+    }   
+     
     .banner{
         height: 111px;
         &__text{
@@ -87,10 +87,14 @@
     }
 
     .infoComplementaire {
-        flex-direction: column;
-        row-gap: 40px;
         & .collapseDiv{
             width: 100%;
+            &:first-child{
+                margin: 0;
+            }
+            &:last-child{
+                margin-top: 30px;
+            }
         }
     }
 

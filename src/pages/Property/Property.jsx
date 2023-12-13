@@ -29,7 +29,7 @@ function Property(props) {
                 <Identity identity={logement}/>
             </section>
             <section className="infoComplementaire">
-                {info.map((e,i) => <Collapse titre={e.titre} contenu={e.contenu} key={i} />)}
+                {info.map((e,i) => <Collapse titre={e.titre} contenu={e.contenu} key={i} id={i} />)}
             </section>
         </main>;
     }

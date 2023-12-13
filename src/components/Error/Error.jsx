@@ -5,4 +5,5 @@ const ErrorCompo = () => (
         <a className="errorPage__link" href="/">Retourner sur la page d'accueil</a>
     </div>
 );
+
 export default ErrorCompo;
