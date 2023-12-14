@@ -135,6 +135,7 @@ main {
   max-width: 1240px;
   height: 415px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 25px;
 }
 .infoGalery__nav {
   position: absolute;
@@ -223,7 +224,7 @@ main {
   vertical-align: top;
 }
 .infoComplementaire .collapseDiv:first-child {
-  margin-right: 8.6vw;
+  margin-right: 124px;
 }
 
 .aboutPage .banner {
@@ -314,7 +315,7 @@ input[id*=checks]:checked ~ .collapseDiv__move--arrow svg {
   display: block;
   width: 122px;
   margin: 0px auto;
-  padding-top: 5%;
+  padding-top: 62px;
 }
 .footer__text {
   margin-top: 10px;
@@ -337,6 +338,12 @@ input[id*=checks]:checked ~ .collapseDiv__move--arrow svg {
   .errorPage__text {
     font-size: 30px;
     margin-bottom: 100px;
+  }
+  .infoComplementaire .collapseDiv:first-child {
+    margin-right: 8.6vw;
+  }
+  .footer__logo {
+    padding-top: 5%;
   }
 }
 @media (min-width: 769px) and (max-width: 991px) {
@@ -364,20 +371,24 @@ input[id*=checks]:checked ~ .collapseDiv__move--arrow svg {
   .header__nav--link {
     font-size: 12px;
     line-height: 17.11px;
+    margin-left: 20px;
   }
   .banner {
     height: 111px;
+    background-size: 100%;
   }
   .banner__text {
     text-align: left;
     top: 25%;
-    width: 45%;
+    left: 20px;
+    width: 260px;
     font-size: 24px;
     line-height: 24px;
-    transform: translateX(-100%);
+    transform: none;
   }
   .homePage__section {
     background-color: #FFFFFF;
+    margin-top: 0;
   }
   .homePage__card {
     width: 335px;
@@ -389,7 +400,8 @@ input[id*=checks]:checked ~ .collapseDiv__move--arrow svg {
     bottom: 1%;
   }
   .infoGalery {
-    height: 255px;
+    height: 200px;
+    background-size: 200%;
   }
   .infoGalery__shadow {
     background: none;

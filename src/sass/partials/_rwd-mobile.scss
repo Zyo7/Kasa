@@ -9,25 +9,29 @@
             &--link {
                 font-size: 12px;
                 line-height: 17.11px;
+                margin-left: 20px;
             }
         }
     }   
      
     .banner{
         height: 111px;
+        background-size: 100%;
         &__text{
             text-align: left;
             top: 25%;
-            width: 45%;
+            left: 20px;
+            width: 260px;
             font-size: 24px;
             line-height: 24px;
-            transform: translateX(-100%);
+            transform: none;
         }
     }
 
     .homePage {
         &__section{
             background-color: $white;
+            margin-top: 0;
         }
         &__card {
             width: 335px;
@@ -41,7 +45,8 @@
     }
 
     .infoGalery{
-        height: 255px;
+        height: 200px;
+        background-size: 200%;
         &__shadow{
             background: none;
         }
