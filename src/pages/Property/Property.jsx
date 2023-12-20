@@ -22,6 +22,7 @@ function Property(props) {
                 contenu: logement.equipments
             }
         ]
+        
         return <main className="propertyPage">
             <Slideshow slide={logement}/>
             <section className="infoLocation">
